@@ -420,8 +420,8 @@ button:hover {
 ul {
   list-style: none;
 }
-ul li a {
-  color: rgb(173, 166, 166) !important;
+.footer-col-4 ul li a {
+  color: rgb(173, 166, 166) ;
 }
 .footer hr {
   border: none;
