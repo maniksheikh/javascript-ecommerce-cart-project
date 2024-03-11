@@ -23,20 +23,17 @@ body {
   margin: 0;
   font-family: "Arial", sans-serif;
 }
-.navbar,
-.nav-content {
+.container {
+  width: 1200px;
+  margin:auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
-  background-color: #333;
-  color: #fff;
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #333;
+  color: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -44,46 +41,39 @@ body {
   z-index: 1000;
 }
 
-.nav-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
+.navbar .logo {
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
 }
-
 .logo img {
-  width: 50px;
   height: 50px;
-  border-radius: 100%;
+  width: 50px;
   cursor: pointer;
+  border-radius: 100%;
   margin-top: 6px;
 }
-
-#MenuItems {
+.navbar .nav-list {
   list-style: none;
-  display: flex;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
 }
 
-#MenuItems li {
+.navbar .nav-list li {
   margin: 0 20px;
 }
 
-#MenuItems a {
+.navbar .nav-list a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-#MenuItems li a:hover {
-  color: #ffcc00 ;
-}
-
-#MenuItems li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navbar .nav-list a:hover {
+  color: #ffd700;
 }
 
 #cart-icon {
@@ -286,7 +276,7 @@ button:hover {
 
 /* latest section */
 .latest-section {
-  max-width: 1200px;
+  max-width: 1175px;
   margin: auto;
   align-items: center;
   justify-items: center;
@@ -337,7 +327,7 @@ button:hover {
 
 /* testimonial */
 .testimonial {
-  width: 1200px;
+  width: 1175px;
   margin: auto;
 }
 .row {
@@ -440,6 +430,9 @@ ul {
 .footer-col-4 ul li a {
   color: rgb(173, 166, 166);
 }
+.footer-col-4 ul li a:hover {
+  color: rgb(117, 96, 96);
+}
 .footer hr {
   border: none;
   background: #b5b5b5;
@@ -532,15 +525,6 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
-  /* .container {
-  position: relative;
- }
- .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 35%;
-} */
 
   .logo {
     width: 50px;
