@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  var toggleButton = document.getElementById('toggle-button');
+  var toggleButton = document.getElementById('menu-img');
   toggleButton.addEventListener('click', menutoggle);
 });
 
@@ -91,6 +91,9 @@ function addCartClick(event) {
   var title = shopProducts.getElementsByClassName("product-title")[0].innerText;
   var price = shopProducts.getElementsByClassName("price")[0].innerText;
   var productImg = shopProducts.getElementsByClassName("product-img")[0].src;
+  var cartLength = 0; 
+  cartLength++;
+  document.querySelector('.length').innerText = cartLength;
 
   addProductToCart(productImg, title, price);
   updateTotal();

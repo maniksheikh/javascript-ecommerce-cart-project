@@ -78,10 +78,17 @@ body {
 
 #cart-icon {
   fill: #fff;
-  margin-right:10px;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 37px;
+  height: 37px;
+  position: relative;
+}
+.length {
+  position: absolute;
+  color: yellow;
+  font-size: 1.5rem;
+  top:0;
+  right: 30 !important;
 }
 
 .menu-img {
@@ -513,81 +520,6 @@ ul {
   .footer-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-  .footer-col-1,
-  .footer-col-2,
-  .footer-col-3,
-  .footer-col-4 {
-    margin-top: -30px;
-    font-size: 14px;
-    line-height: 1;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-
-  .logo {
-    width: 50px;
-    height: 50px;
-  }
-  .section-title {
-    width: 270px;
-    margin: auto;
-    font-size: 1.1rem;
-    margin-top: -12px;
-  }
-  .shop-content {
-    margin-top: 1rem;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .product-details {
-    width: 300px;
-  }
-  button {
-    margin-top: -35px;
-  }
-  .latest-section {
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .product-header {
-    font-size: 1.4rem;
-    margin-top: -15px;
-    margin-bottom: 10px;
-  }
-  .product-title {
-    text-decoration: lowercase;
-  }
-  .product-latest-details {
-    width: 300px;
-  }
-  .testimonial-section {
-    width: 300px;
-  }
-  .row {
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .testimonial-section .row .col-3 {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  .footer {
-    width: 300px;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    margin-top: 15px;
-    border-radius: 5px;
-  }
-  .footer-row {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
   }
   .footer-col-1,
   .footer-col-2,
